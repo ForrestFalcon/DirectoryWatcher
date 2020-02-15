@@ -19,4 +19,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: build
-        path: DirectoryWatcher\DirectoryWatcher.Worker\bin\Release\netcoreapp3.1
+        path: DirectoryWatcher.Worker\bin\Release\netcoreapp3.1
