@@ -12,6 +12,11 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.1
+        dotnet-version: 3.1.100
     - name: Build with dotnet
       run: dotnet build -r win-x64 -c Release
+    - name: Release artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: build
+        path: DirectoryWatcher\DirectoryWatcher.Worker\bin\Release\netcoreapp3.1
